@@ -9,11 +9,18 @@
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
                 text-align: center;
             }
+            @media print
+            {
+                .screen-only
+                {
+                    display: none;
+                }
+            }
         </style>
     </head>
 
     <body>
         <h1><b>Hello, world!</b></h1>
-        <p>Test</p>
+        <p class ="screen-only"> Test </p>
     </body>
 </html>
