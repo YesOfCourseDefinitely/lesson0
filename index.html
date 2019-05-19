@@ -9,11 +9,18 @@
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
                 text-align: center;
             }
-            @media print
+            @media (min-width: 700px)
             {
-                .screen-only
+                h2::before
                 {
-                    display: none;
+                    content: "Welcome! to my Web Page"
+                }
+            }
+            @media (max-width: 699px)
+            {
+                h2::before
+                {
+                    content: "Welcome"
                 }
             }
         </style>
@@ -21,10 +28,6 @@
 
     <body>
         <h1><b>Hello, world!</b></h1>
-<<<<<<< HEAD
-        <p class ="screen-only"> Test </p>
-=======
-        <p>Test</p> 
->>>>>>> 17dc177aee276577c7c67e4505d7ff7a56eb68fc
+        <h2>  </h2>
     </body>
 </html>
